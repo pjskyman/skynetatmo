@@ -112,6 +112,116 @@ public enum MeasurementType
             return "S";
         }
     },
+    RAIN
+    {
+        boolean isCompatibleWith(MeasurementScale scale)
+        {
+            return true;
+        }
+
+        String getInputString()
+        {
+            return "Rain";
+        }
+
+        String getUnitString()
+        {
+            return " mm/h";
+        }
+
+        String getJSONCode()
+        {
+            return "";
+        }
+    },
+    WIND_STRENGTH
+    {
+        boolean isCompatibleWith(MeasurementScale scale)
+        {
+            return true;
+        }
+
+        String getInputString()
+        {
+            return "WindStrength";
+        }
+
+        String getUnitString()
+        {
+            return " km/h";
+        }
+
+        String getJSONCode()
+        {
+            return "";
+        }
+    },
+    WIND_ANGLE
+    {
+        boolean isCompatibleWith(MeasurementScale scale)
+        {
+            return true;
+        }
+
+        String getInputString()
+        {
+            return "WindAngle";
+        }
+
+        String getUnitString()
+        {
+            return "°";
+        }
+
+        String getJSONCode()
+        {
+            return "";
+        }
+    },
+    GUST_STRENGTH
+    {
+        boolean isCompatibleWith(MeasurementScale scale)
+        {
+            return true;
+        }
+
+        String getInputString()
+        {
+            return "Guststrength";
+        }
+
+        String getUnitString()
+        {
+            return " km/h";
+        }
+
+        String getJSONCode()
+        {
+            return "";
+        }
+    },
+    GUST_ANGLE
+    {
+        boolean isCompatibleWith(MeasurementScale scale)
+        {
+            return true;
+        }
+
+        String getInputString()
+        {
+            return "GustAngle";
+        }
+
+        String getUnitString()
+        {
+            return "°";
+        }
+
+        String getJSONCode()
+        {
+            return "";
+        }
+    },
     MIN_TEMPERATURE
     {
         boolean isCompatibleWith(MeasurementScale scale)
