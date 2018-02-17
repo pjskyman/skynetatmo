@@ -11,6 +11,7 @@ import org.jdom2.Element;
 import org.jdom2.input.SAXBuilder;
 import org.jdom2.output.Format;
 import org.jdom2.output.XMLOutputter;
+import sky.netatmo.DefaultMeasure;
 import sky.netatmo.Measure;
 import sky.netatmo.MeasurementScale;
 import sky.netatmo.MeasurementType;
@@ -296,7 +297,7 @@ public class MeasureDatabase
         }
     }
 
-    private static class DatabaseMeasure extends Measure
+    private static class DatabaseMeasure extends DefaultMeasure
     {
         private DatabaseMeasure(Measurer measurer,Date date,MeasurementType measurementType,double value)
         {

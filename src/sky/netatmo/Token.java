@@ -73,7 +73,7 @@ public class Token
         try
         {
             response=response.getAsJsonObject("body");
-            User user=new User(this,response.getAsJsonPrimitive("_id").getAsString(),response);
+            User user=new DefaultUser(this,response.getAsJsonPrimitive("_id").getAsString(),response);
             return new User[]{user};
         }
         catch(JsonParseException e)
