@@ -1,3 +1,10 @@
 /nbproject/
 /build.xml
 /database.xml
+/salleDeBain.json
+/chambre.json
+/sousSol.json
+/anemometre.json
+/jardin.json
+/pluviometre.json
+/salon.json
